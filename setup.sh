@@ -5,7 +5,6 @@ apt-get upgrade -y &&
 apt-get dist-upgrade -y && 
 apt-get install jd-gui &&
 apt-get install ia32-libs
-apt-get install &&
 apt-get install default-jdk &&
 apt-get install default-jre
 
@@ -16,6 +15,7 @@ cd ~/dex2jar-2.0
 rm *.bat
 cd ../
 cp ~/dex2jar-2.0/* /usr/local/bin
+cd /usr/local/bin
 chmod +x d2j-*
 
 cd /tmp

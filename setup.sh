@@ -10,18 +10,19 @@ apt-get install default-jre
 
 cd /tmp
 wget https://bitbucket.org/pxb1988/dex2jar/downloads/dex2jar-2.0.zip
-unzip dex2jar-2.0.zip -d
-cd ~/dex2jar-2.0
+unzip dex2jar-2.0.zip 
+cd /tmp/dex2jar-2.0/
 rm *.bat
 cd ../
-cp ~/dex2jar-2.0/* /usr/local/bin
+sudo cp -R /tmp/dex2jar-2.0/* /usr/local/bin
 cd /usr/local/bin
-chmod +x d2j-*
+sudo chmod 775 d2j*
+sudo chmod 775 lib/
 
 cd /tmp
 wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool
-wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.3.jar
-mv apktool_2.0.3.jar apktool.jar
+wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.0.0.jar
+mv apktool_2.0.0.jar apktool.jar
 mv apktool /usr/local/bin
 mv apktool.jar /usr/local/bin
 cd /usr/local/bin

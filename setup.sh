@@ -3,7 +3,6 @@
 apt-get update && 
 apt-get upgrade -y && 
 apt-get dist-upgrade -y && 
-apt-get install jd-gui &&
 apt-get install ia32-libs
 apt-get install default-jdk &&
 apt-get install default-jre
@@ -29,6 +28,8 @@ cd /usr/local/bin
 chmod +x apktool
 chmod +x apktool.jar
 
-
+cd /tmp
+wget https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui_1.4.0-0_all.deb
+dpkg -i jd-gui_1.2.0-0_all.deb
 
 

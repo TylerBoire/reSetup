@@ -30,6 +30,6 @@ chmod +x apktool.jar
 
 cd /tmp
 wget https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui_1.4.0-0_all.deb
-dpkg -i jd-gui_1.2.0-0_all.deb
+dpkg -i jd-gui_1.4.0-0_all.deb
 
 
